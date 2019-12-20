@@ -110,8 +110,6 @@ client.on('message', message => {
 
     }
 
-
-
     const embed = {
         "color": 3447003,
         "footer": {},
@@ -140,7 +138,11 @@ client.on('message', message => {
         ]
     };
 
-    if (message.content ==`${prefix}test`) {
+
+    /////////////////////////////////////////////////////////
+
+
+    if (message.content == `${prefix}test`) {
 
         console.log(message.content);
 
@@ -150,12 +152,12 @@ client.on('message', message => {
 
     }
 
-    if (message.content==`${prefix}help`) {
+    if (message.content == `${prefix}help`) {
 
         message.channel.send({ embed });
     }
 
-    if (message.content==`${prefix}guess`) {
+    if (message.content == `${prefix}guess`) {
 
         let member = message.member.user.tag;
         Start_Guessing(member);
@@ -171,27 +173,28 @@ client.on('message', message => {
 
 
 
-if(message.content.includes("no u") || message.content.includes("No u") || message.content.includes("no U")){
+    if (message.content == ("no u") || message.content == ("No u") || message.content == ("no U")) {
 
 
-    let member = message.member.user.tag;
+        let user = message.author;
 
-    if(member != 'Game Bot#7992'){
-    message.channel.send("No u ");
+        if (!user.bot) {
+
+
+            message.channel.send("No u ");
+        }
     }
-}
-
 
 
     if (!message.author.bot && message.content.includes("420") && message.content.includes("69")) {
-        message.channel.send("WOW 420 AND 69! OH MY GOSH SO FUNNY!!!!!!!");
+        message.channel.send("Ha nice 420 AND 69!");
     }
     else if (!message.author.bot && message.content.includes("69")) {
-        message.channel.send("hahahaha funny sex number");
+        message.channel.send("ha funny sex number");
     }
 
     else if (!message.author.bot && message.content.includes("420")) {
-        message.channel.send("hahahaha funny drug number");
+        message.channel.send("ha funny drug number");
     }
 
 
