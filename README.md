@@ -1,5 +1,4 @@
 # Game-Bot
-Discord Bot
 
 This is a simple bot I'm making for discord
 
@@ -10,8 +9,8 @@ All it does at the moment is:
 
 Plays a guessing game
 
-react to 420 
+React to 420 
 
-rect 69 
+Rect 69 
 
-respond to No u
+Respond to No u
