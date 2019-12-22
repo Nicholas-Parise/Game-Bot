@@ -11,6 +11,6 @@ Plays a guessing game
 
 React to 420 
 
-Rect 69 
+React 69 
 
 Respond to No u
